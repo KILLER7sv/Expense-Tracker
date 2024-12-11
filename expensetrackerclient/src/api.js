@@ -15,3 +15,7 @@ export const register = (formData) => API.post('/users/register', formData);
 export const login = (formData) => API.post('/users/login', formData);
 export const getExpenses = () => API.get('/expenses');
 export const addExpense = (data) => API.post('/expenses', data);
+export const fetchTransactions = () => API.get("/transactions");
+export const addTransaction = (data) => API.post("/transactions", data);
+export const deleteTransaction = (id) => API.delete(`/transactions/${id}`);
+
